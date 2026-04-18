@@ -3,49 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitPocketHome - Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>GitPocket - Your Git Management App</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            color: white;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .features, .why, .cta {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: fadeIn 2s;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            animation: fadeIn 2s;
+        }
+        .feature-item {
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .feature-item:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            text-align: center;
+        }
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        @media (max-width: 700px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to GitPocketHome</h1>
-        <p>Your ultimate solution for task management and inventory tracking.</p>
-        <nav>
-            <ul>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="features">
-            <h2>Features</h2>
-            <div class="feature">
-                <h3>Task Management</h3>
-                <p>Organize your tasks efficiently with our intuitive task management system.</p>
-            </div>
-            <div class="feature">
-                <h3>Inventory Tracking</h3>
-                <p>Keep track of your inventory with real-time updates and analytics.</p>
-            </div>
-            <div class="feature">
-                <h3>Smart Integration</h3>
-                <p>Connect with other applications for a seamless experience.</p>
-            </div>
-        </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>GitPocketHome is dedicated to providing you with the best project management tools available. Our features are designed to make your life easier and more organized.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>If you have any questions, feel free to reach out!</p>
-            <p>Email: support@gitpockethome.com</p>
-        </section>
-    </main>
+    <div class="hero">
+        <h1>Welcome to GitPocket</h1>
+        <p>Your Git Management App for iOS - Log in with GitHub or GitLab!</p>
+    </div>
+    <div class="features">
+        <h2>Features</h2>
+        <div class="feature-item">
+            <h3>Manage Repositories</h3>
+            <p>Seamlessly manage all your repositories from one place!</p>
+        </div>
+        <div class="feature-item">
+            <h3>Responsive Design</h3>
+            <p>Perfectly designed for your iPhone - access your code anytime, anywhere!</p>
+        </div>
+        <div class="feature-item">
+            <h3>Multi-Account Support</h3>
+            <p>Supports both GitHub and GitLab accounts for your convenience.</p>
+        </div>
+    </div>
+    <div class="why">
+        <h2>Why GitPocket?</h2>
+        <p>We offer the ultimate solution for managing your Git repositories on the go. Enjoy a sleek interface, robust features, and unmatched convenience.</p>
+    </div>
+    <div class="cta">
+        <h2>Ready to Get Started?</h2>
+        <p>Download GitPocket now and take control of your repositories!</p>
+    </div>
     <footer>
-        <p>&copy; 2026 GitPocketHome. All rights reserved.</p>
+        <p>&copy; 2026 GitPocket. All rights reserved.</p>
     </footer>
 </body>
 </html>
